@@ -32,7 +32,7 @@ const Hero = () => {
         <TextGenerateEffect words={words} filter={true} />
         <Button
           id="heroButton"
-          className="bg-secondaryColor mt-8 text-2xl py-7 px-9 rounded-xl hover:bg-white hover:text-secondaryColor "
+          className="bg-secondaryColor mt-8 text-2xl py-7 px-9 rounded-xl hover:bg-white hover:text-secondaryColor opacity-0 "
         >
           Get Started
         </Button>
