@@ -9,8 +9,8 @@ import gsap from "gsap";
 const Hero = () => {
   useGSAP(() => {
     const tl = gsap.timeline();
-    tl.from("#heroButton", {
-      opacity: 0,
+    tl.to("#heroButton", {
+      opacity: 1,
       duration: 1,
       delay: 5,
     });
