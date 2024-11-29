@@ -7,34 +7,36 @@ import { Button } from "./ui/button";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { start } from "repl";
 
 const Features = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
     const tl = gsap.timeline({
-      scrollTrigger: { trigger: "#container", start: "top 80%" },
+      scrollTrigger: {
+        trigger: "#container",
+        start: "top bottom",
+      },
     });
 
     tl.from("#container1", {
       x: -50,
       opacity: 0,
-      duration: 0.5,
+      duration: 0.4,
     })
       .from("#container2", {
         x: -50,
         opacity: 0,
-        duration: 0.5,
+        duration: 0.4,
       })
       .from("#container3", {
         x: -50,
         opacity: 0,
-        duration: 0.5,
+        duration: 0.4,
       })
       .from("#button", {
         opacity: 0,
-        duration: 0.5,
+        duration: 0.4,
       });
   });
 
