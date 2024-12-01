@@ -1,3 +1,4 @@
+import { DM_Sans } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -59,6 +60,9 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        DM_Sans: ["DM Sans", "sans-serif"],
       },
     },
   },

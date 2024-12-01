@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Roboto } from "next/font/google";
 import Header from "../components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,9 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} bg-mainColor `}>
+      <body className={`${roboto.className} bg-mainColor container mx-auto `}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
