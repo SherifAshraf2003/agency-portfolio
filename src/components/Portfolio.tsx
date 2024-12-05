@@ -12,12 +12,17 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./ui/carousel";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
+import Autoplay from "embla-carousel-autoplay";
 
 const Portfolio = () => {
   const [api, setApi] = useState<CarouselApi | null>(null);
   const [index, setIndex] = useState(0);
+
+  const plugin = useRef(
+    Autoplay({ delay: 2500, stopOnInteraction: true, stopOnMouseEnter: true })
+  );
 
   useEffect(() => {
     if (!api) return;
@@ -46,6 +51,7 @@ const Portfolio = () => {
       <Carousel
         setApi={setApi}
         className="w-[50vw] h-fit my-10 text-secondaryColor"
+        plugins={[plugin.current]}
       >
         <CarouselContent>
           <CarouselItem>
