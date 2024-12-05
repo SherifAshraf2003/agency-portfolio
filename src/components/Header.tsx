@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Rokkitt } from "next/font/google";
-import Features from "./Features";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
