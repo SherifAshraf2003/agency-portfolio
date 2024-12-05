@@ -8,13 +8,16 @@ import { Button } from "./ui/button";
 
 const PaymentPlans = () => {
   return (
-    <div className=" font-DM_Sans text-white mx-auto flex flex-col my-72">
-      <div className="text-center pb-28  ">
-        <h1 className="text-5xl font-semibold text-center">
+    <section
+      id="plans"
+      className=" font-DM_Sans text-white mx-auto flex flex-col my-40"
+    >
+      <div className="text-center pb-14 mt:pb-28  ">
+        <h1 className="md:text-5xl text-3xl font-semibold text-center">
           Payment <span className="italic text-secondaryColor">Plans</span>
         </h1>
       </div>
-      <div className="flex justify-center items-center gap-10">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10">
         <Card className=" group py-3 px-1 w-[310px] rounded-2xl hover:bg-[#4A3AFF] transition-all duration-300 hover:translate-y-[-16px] ">
           <CardHeader className="flex flex-row gap-4 justify-start pl-10 items-center ">
             <div className="h-16 w-16 flex justify-center items-center bg-[#ECEBFF] rounded-lg ">
@@ -320,7 +323,7 @@ const PaymentPlans = () => {
           </CardFooter>
         </Card>
       </div>
-    </div>
+    </section>
   );
 };
 

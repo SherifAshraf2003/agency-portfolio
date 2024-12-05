@@ -12,16 +12,16 @@ const Hero = () => {
     tl.to("#heroButton", {
       opacity: 1,
       duration: 1,
-      delay: 5,
+      delay: 3,
     });
   });
 
-  const words = `Unlock your business potential with our innovative solutions. We help you reach new heights through strategic growth, digital transformation, and data-driven insights.`;
+  const words = `Drive growth and success with our innovative, data-driven solutions.`;
 
   return (
-    <div className="text-white flex gap-20 pt-[150px] px-[130px]  ">
+    <div className="text-white container flex gap-5  pt-2 md:pt-32  ">
       <div className=" w-full pt-[50px] ">
-        <h1 className=" w-[390px] text-7xl leading-tight tracking-tight  font-semibold text-pretty">
+        <h1 className=" md:w-[390px] text-2xl md:text-7xl leading-tight tracking-tight  font-semibold text-pretty">
           Elevate Your Business,{" "}
           <span className="text-secondaryColor font-extrabold italic  ">
             Soar
@@ -32,13 +32,17 @@ const Hero = () => {
         <TextGenerateEffect words={words} filter={true} />
         <Button
           id="heroButton"
-          className="bg-secondaryColor mt-8 text-2xl py-7 px-9 rounded-xl hover:bg-white hover:text-secondaryColor opacity-0 "
+          className="bg-secondaryColor mt-5 md:mt-8  md:text-2xl py-5  md:py-7 px-6 md:px-9 rounded-xl hover:bg-white hover:text-secondaryColor opacity-0 items-center justify-center w-fit "
         >
           Get Started
         </Button>
       </div>
-      <div>
-        <Image src={heroImage} alt="hero icon" width={1800} height={1500} />
+      <div className="flex justify-center items-center">
+        <Image
+          src={heroImage}
+          alt="hero icon"
+          className="w-auto h-auto md:h-[1500] md:w-[2000px] "
+        />
       </div>
     </div>
   );

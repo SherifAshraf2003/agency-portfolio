@@ -25,7 +25,6 @@ const Portfolio = () => {
     const updateIndex = () => {
       const selectedIndex = api.selectedScrollSnap();
       setIndex(selectedIndex);
-      console.log("Current Index:", selectedIndex);
     };
 
     api.on("select", updateIndex);
@@ -36,38 +35,41 @@ const Portfolio = () => {
   }, [api]);
 
   return (
-    <div id="portfolioContainer1" className="text-white w-fit mx-auto h-screen">
-      <h1 className="text-5xl font-semibold text-center">
+    <section
+      id="portfolioContainer1"
+      className="text-white w-fit mx-auto h-fit flex justify-center items-center flex-col"
+    >
+      <h1 className="md:text-5xl text-3xl font-semibold text-center">
         Our <span className="text-secondaryColor italic">Portfolio</span>
       </h1>
 
       <Carousel
         setApi={setApi}
-        className="w-[50vw] h-[70vh] my-10 text-secondaryColor"
+        className="w-[50vw] h-fit my-10 text-secondaryColor"
       >
         <CarouselContent>
           <CarouselItem>
-            <div className="h-[70vh] flex justify-center">
+            <div className="h-fit flex justify-center">
               <Image
-                className="w-fit h-[70vh]"
+                className="w-fit h-fit"
                 src={portfolio1}
                 alt="portfolio website"
               />
             </div>
           </CarouselItem>
           <CarouselItem>
-            <div className="h-[70vh] flex justify-center">
+            <div className="h-fit flex justify-center">
               <Image
-                className="w-fit h-[70vh]"
+                className="w-fit h-fit"
                 src={portfolio2}
                 alt="portfolio website"
               />
             </div>
           </CarouselItem>
           <CarouselItem>
-            <div className="h-[70vh] flex justify-center">
+            <div className="h-fit flex justify-center">
               <Image
-                className="w-fit h-[70vh]"
+                className="w-fit h-fit"
                 src={portfolio3}
                 alt="portfolio website"
               />
@@ -93,12 +95,12 @@ const Portfolio = () => {
       <div className="flex justify-center items-center">
         <Button
           id="portfolioButton"
-          className="bg-secondaryColor mt-5 text-2xl py-7 px-9 rounded-xl hover:bg-white hover:text-secondaryColor w-fit mx-auto "
+          className="bg-secondaryColor mt-5 text-xl md:text-2xl py-7 px-9 rounded-xl hover:bg-white hover:text-secondaryColor w-fit mx-auto "
         >
           Check Plans
         </Button>
       </div>
-    </div>
+    </section>
   );
 };
 
