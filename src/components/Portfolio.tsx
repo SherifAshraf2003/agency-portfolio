@@ -19,12 +19,16 @@ import Autoplay from "embla-carousel-autoplay";
 const Portfolio = () => {
   const [api, setApi] = useState<CarouselApi | null>(null);
   const [index, setIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   const plugin = useRef(
     Autoplay({ delay: 2500, stopOnInteraction: true, stopOnMouseEnter: true })
   );
 
   useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    }
     if (!api) return;
 
     const updateIndex = () => {
@@ -51,7 +55,10 @@ const Portfolio = () => {
       <Carousel
         setApi={setApi}
         className="w-[50vw] h-fit my-10 text-secondaryColor"
-        plugins={[plugin.current]}
+        plugins={!isMobile ? [plugin.current] : []}
+        opts={{
+          loop: true,
+        }}
       >
         <CarouselContent>
           <CarouselItem>
