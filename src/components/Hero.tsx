@@ -2,9 +2,9 @@
 import Image from "next/image";
 import heroImage from "../../public/Desktop.svg";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
-import { Button } from "./ui/button";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import MeetingButton from "./MeetingButton";
 
 const Hero = () => {
   useGSAP(() => {
@@ -30,12 +30,12 @@ const Hero = () => {
         </h1>
 
         <TextGenerateEffect words={words} filter={true} />
-        <Button
+        <MeetingButton
           id="heroButton"
           className="bg-secondaryColor mt-5 md:mt-8  md:text-2xl py-5  md:py-7 px-6 md:px-9 rounded-xl hover:bg-white hover:text-secondaryColor opacity-0 items-center justify-center w-fit "
         >
           Get Started
-        </Button>
+        </MeetingButton>
       </div>
       <div className="flex justify-center items-center">
         <Image

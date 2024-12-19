@@ -13,8 +13,8 @@ import {
   CarouselPrevious,
 } from "./ui/carousel";
 import { useEffect, useRef, useState } from "react";
-import { Button } from "./ui/button";
 import Autoplay from "embla-carousel-autoplay";
+import MeetingButton from "./MeetingButton";
 
 const Portfolio = () => {
   const [api, setApi] = useState<CarouselApi | null>(null);
@@ -106,12 +106,12 @@ const Portfolio = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <Button
+        <MeetingButton
           id="portfolioButton"
           className="bg-secondaryColor mt-5 text-xl md:text-2xl py-7 px-9 rounded-xl hover:bg-white hover:text-secondaryColor w-fit mx-auto "
         >
-          Check Plans
-        </Button>
+          Get Started
+        </MeetingButton>
       </div>
     </section>
   );

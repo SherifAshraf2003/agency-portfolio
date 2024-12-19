@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
-import icon1 from "../../public/Icon1.svg";
-import icon2 from "../../public/Icon2.svg";
-import icon3 from "../../public/Icon3.svg";
-import { Button } from "./ui/button";
+import icon1 from "../../public/Icon1.png";
+import icon2 from "../../public/Icon2.png";
+import icon3 from "../../public/Icon3.png";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import MeetingButton from "./MeetingButton";
 
 const Features = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -47,56 +47,56 @@ const Features = () => {
       </h1>
       <div
         id="container"
-        className="flex flex-col md:flex-row justify-between items-center align-middle gap-9 md:gap-0 text-white pb-16  "
+        className="flex flex-col md:flex-row justify-between items-start  gap-9 md:gap-0 text-white pb-16  "
       >
         <div
           id="container1"
-          className="text-center flex flex-col  items-center gap-2  md:gap-5 "
+          className="text-center flex flex-1 flex-col  items-center gap-2  md:gap-5 "
         >
-          <Image src={icon1} alt="icon1" />
+          <Image height={64} width={64} src={icon1} alt="icon1" />
           <div className="w-2/3 space-y-1 md:space-y-3">
             <h2 className=" text-xl md:text-2xl font-semibold">
               Web Development
             </h2>
             <p className="text-white/70 text-lg md:text-xl ">
-              Create a platform with the best and coolest quality from us.
+              We will create you a fully responsive website with custom designs
+              tailored for your business.
             </p>
           </div>
         </div>
         <div
           id="container2"
-          className="text-center flex flex-col  items-center gap-2  md:gap-5 "
+          className="text-center flex flex-1 flex-col  items-center gap-2  md:gap-5 "
         >
-          <Image src={icon2} alt="icon2" />
+          <Image height={64} width={64} src={icon2} alt="icon2" />
           <div className="w-2/3 space-y-1 md:space-y-3">
-            <h2 className=" text-xl md:text-2xl font-semibold">UI/UX Design</h2>
+            <h2 className=" text-xl md:text-2xl font-semibold">
+              AI integration
+            </h2>
             <p className="text-white/70 text-lg md:text-xl ">
-              We provide UI/UX Design services, and of course with the best
-              quality and prices.
+              We will integrate the latest and best AI technology for your needs
             </p>
           </div>
         </div>
         <div
           id="container3"
-          className="text-center flex flex-col  items-center gap-2  md:gap-5 "
+          className="text-center flex flex-1 flex-col  items-center gap-2  md:gap-5 "
         >
-          <Image src={icon3} alt="icon3" />
+          <Image height={64} width={64} src={icon3} alt="icon3" />
           <div className="w-2/3 space-y-1 md:space-y-3">
-            <h2 className=" text-xl md:text-2xl font-semibold">
-              Marketing Plan
-            </h2>
+            <h2 className=" text-xl md:text-2xl font-semibold">Hosting</h2>
             <p className="text-white/70 text-lg md:text-xl ">
-              We provide Graphic Design services, with the best designers
+              We will take care of all the hosting needs for your platform.
             </p>
           </div>
         </div>
       </div>
-      <Button
+      <MeetingButton
         id="button"
         className="bg-secondaryColor mt-2  md:mt-5 text-xl md:text-2xl py-7 px-9 rounded-xl hover:bg-white hover:text-secondaryColor w-fit mx-auto "
       >
-        Check Plans
-      </Button>
+        Get Started
+      </MeetingButton>
     </section>
   );
 };

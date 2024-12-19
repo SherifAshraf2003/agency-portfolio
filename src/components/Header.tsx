@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
-import { Button } from "./ui/button";
 import { Rokkitt } from "next/font/google";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import MeetingButton from "./MeetingButton";
 
 const rokkitt = Rokkitt({
   subsets: ["latin"],
@@ -38,12 +38,12 @@ const Header = () => {
             Plans
           </Link>
         </nav>
-        <Button
-          className="bg-secondaryColor md:flex hidden text-md px-5 hover:bg-white hover:text-secondaryColor "
-          size="lg"
+        <MeetingButton
+          className="bg-secondaryColor text-md px-5 hover:bg-white hover:text-secondaryColor"
+          id="b"
         >
           Get Started
-        </Button>
+        </MeetingButton>
         <button onClick={() => setIsOpen(!isOpen)} className="block md:hidden">
           {isOpen ? <X /> : <Menu />}
         </button>

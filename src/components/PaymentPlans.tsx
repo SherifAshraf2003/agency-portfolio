@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
+import { Card, CardContent, CardHeader } from "./ui/card";
 import paymentPlan1Img from "../../public/paymentPlan1.png";
 import paymentPlan2Img from "../../public/paymentPlan2.png";
 import paymentPlan3Img from "../../public/paymentPlan3.png";
 import check from "../../public/Check.png";
-import { Button } from "./ui/button";
+import MeetingButton from "./MeetingButton";
 
 const PaymentPlans = () => {
   return (
@@ -18,7 +18,7 @@ const PaymentPlans = () => {
         </h1>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center gap-10">
-        <Card className=" group py-3 px-1 w-[310px] rounded-2xl hover:bg-[#4A3AFF] transition-all duration-300 hover:translate-y-[-16px] ">
+        <Card className=" group py-3 px-1 w-[310px] h-[550px] rounded-2xl hover:bg-[#4A3AFF] transition-all duration-300 hover:translate-y-[-16px] ">
           <CardHeader className="flex flex-row gap-4 justify-start pl-10 items-center ">
             <div className="h-16 w-16 flex justify-center items-center bg-[#ECEBFF] rounded-lg ">
               <Image
@@ -33,21 +33,22 @@ const PaymentPlans = () => {
               </p>
 
               <p className=" p-0 text-xl text-mainColor font-bold  duration-300  group-hover:text-white ">
-                Basic
+                Silver
               </p>
             </div>
           </CardHeader>
           <CardContent className="flex flex-col gap-3">
             <div>
               <p className="text-[#6F6C90] duration-300 group-hover:text-white/70  ">
-                Lorem ipsum dolor sit amet doloroli sitiol conse ctetur.
+                Affordable solutions for getting your business online.
               </p>
             </div>
-            <div className="flex gap-2 items-baseline">
-              <p className="font-bold text-5xl text-[#170F49] duration-300  group-hover:text-white ">
+            <div className="flex  items-baseline">
+              <p className="font-bold text-5xl text-[#170F49] duration-300  group-hover:text-white mb-2 ">
                 $99
               </p>
-              <p className="text-[#6F6C90] duration-300 group-hover:text-white/70 font-medium text-lg ">
+
+              <p className="text-[#6F6C90] duration-300 group-hover:text-white/70 font-medium text-lg">
                 /monthly
               </p>
             </div>
@@ -67,7 +68,7 @@ const PaymentPlans = () => {
                   />
                 </div>
                 <p className="text-[#170F49] duration-300 group-hover:text-white/70 ">
-                  All analytics features
+                  Fully responsive website
                 </p>
               </div>
               <div className="flex gap-3">
@@ -80,7 +81,7 @@ const PaymentPlans = () => {
                   />
                 </div>
                 <p className="text-[#170F49] duration-300 group-hover:text-white/70 ">
-                  Up to 250,000 tracked visits
+                  Basic SEO optimization
                 </p>
               </div>
               <div className="flex gap-3">
@@ -93,31 +94,13 @@ const PaymentPlans = () => {
                   />
                 </div>
                 <p className="text-[#170F49] duration-300 group-hover:text-white/70 ">
-                  Normal support
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <div className="h-[21px] w-[21px] flex justify-center items-center rounded-full bg-[#4A3AFF]  duration-300  group-hover:bg-white">
-                  <Image
-                    className="filter group-hover:invert duration-300"
-                    width={12}
-                    src={check}
-                    alt="check icon"
-                  />
-                </div>
-                <p className="text-[#170F49] duration-300 group-hover:text-white/70 ">
-                  Up to 3 team members
+                  2 weeks of post-launch support
                 </p>
               </div>
             </div>
           </CardContent>
-          <CardFooter className="flex justify-center items-center">
-            <Button className="bg-[#4A3AFF] duration-300 group-hover:bg-white group-hover:text-[#4A3AFF] font-semibold py-6 px-12 text-lg rounded-full active:scale-90 transition-all ">
-              Get started
-            </Button>
-          </CardFooter>
         </Card>
-        <Card className=" group py-3 px-1 w-[310px] rounded-2xl hover:bg-[#4A3AFF] transition-all duration-300 hover:translate-y-[-16px] ">
+        <Card className=" group py-3 px-1 w-[310px] h-[550px] rounded-2xl hover:bg-[#4A3AFF] transition-all duration-300 hover:translate-y-[-16px] ">
           <div className="absolute">
             <div className=" bg-[#4A3AFF] text-white text-[11px] rounded-lg py-2 px-3 relative left-[230px] top-2 transition group-hover:bg-white/30 duration-300  ">
               Popular
@@ -138,19 +121,19 @@ const PaymentPlans = () => {
               </p>
 
               <p className=" p-0 text-xl group-hover:text-white duration-300 text-mainColor font-bold ">
-                Pro
+                Gold
               </p>
             </div>
           </CardHeader>
           <CardContent className="flex flex-col gap-3">
             <div>
               <p className="text-[#6F6C90] duration-300 group-hover:text-white/70 ">
-                Lorem ipsum dolor sit amet doloroli sitiol conse ctetur.
+                Advanced tools for growing businesses.
               </p>
             </div>
             <div className="flex gap-2 items-baseline">
               <p className="font-bold text-5xl text-[#170F49] duration-300 group-hover:text-white ">
-                $99
+                $199
               </p>
               <p className="text-[#6F6C90] font-medium text-lg duration-300 group-hover:text-white/70 ">
                 /monthly
@@ -172,7 +155,7 @@ const PaymentPlans = () => {
                   />
                 </div>
                 <p className="text-[#170F49] duration-300 group-hover:text-white/70 ">
-                  All analytics features
+                  Fully responsive website
                 </p>
               </div>
               <div className="flex gap-3">
@@ -185,7 +168,7 @@ const PaymentPlans = () => {
                   />
                 </div>
                 <p className="text-[#170F49]  duration-300 group-hover:text-white/70 ">
-                  Up to 1,000,000 tracked visits
+                  Advanced SEO Optimization
                 </p>
               </div>
               <div className="flex gap-3">
@@ -198,7 +181,7 @@ const PaymentPlans = () => {
                   />
                 </div>
                 <p className="text-[#170F49] duration-300 group-hover:text-white/70 ">
-                  Premium support
+                  Customized design templates
                 </p>
               </div>
               <div className="flex gap-3">
@@ -211,18 +194,26 @@ const PaymentPlans = () => {
                   />
                 </div>
                 <p className="text-[#170F49] duration-300 group-hover:text-white/70 ">
-                  Up to 10 team members
+                  Website analytics
+                </p>
+              </div>
+              <div className="flex gap-3">
+                <div className="h-[21px] w-[21px] flex justify-center items-center rounded-full bg-[#4A3AFF] duration-300  group-hover:bg-white">
+                  <Image
+                    className="filter group-hover:invert duration-300"
+                    width={12}
+                    src={check}
+                    alt="check icon"
+                  />
+                </div>
+                <p className="text-[#170F49] duration-300 group-hover:text-white/70 ">
+                  1 month of post-launch support
                 </p>
               </div>
             </div>
           </CardContent>
-          <CardFooter className="flex justify-center items-center">
-            <Button className="bg-[#4A3AFF] duration-300 group-hover:bg-white group-hover:text-[#4A3AFF] font-semibold py-6 px-12 text-lg rounded-full active:scale-90 transition-all ">
-              Get started
-            </Button>
-          </CardFooter>
         </Card>
-        <Card className=" group py-3 px-1 w-[310px] rounded-2xl hover:bg-[#4A3AFF] transition-all duration-300 hover:translate-y-[-16px] ">
+        <Card className=" group py-3 px-1 w-[315px] h-[550px] rounded-2xl hover:bg-[#4A3AFF] transition-all duration-300 hover:translate-y-[-16px] ">
           <CardHeader className="flex flex-row gap-4 justify-start pl-10 items-center ">
             <div className=" flex justify-center items-center h-16 w-16 bg-[#ECEBFF] rounded-lg ">
               <Image
@@ -234,23 +225,24 @@ const PaymentPlans = () => {
             </div>
             <div className="flex flex-col p-0  ">
               <p className=" duration-300 group-hover:text-white/70 p-0 text-[#6F6C90] font-medium text-lg ">
-                For big companies
+                For startups
               </p>
 
               <p className=" p-0 text-xl text-mainColor font-bold  duration-300  group-hover:text-white ">
-                Enterprise
+                Diamond
               </p>
             </div>
           </CardHeader>
-          <CardContent className="flex flex-col gap-3">
+          <CardContent className="flex flex-col gap-3 ">
             <div>
               <p className="text-[#6F6C90] duration-300 group-hover:text-white/70  ">
-                Lorem ipsum dolor sit amet doloroli sitiol conse ctetur.
+                Comprehensive solutions for scaling your business with the power
+                of Ai.
               </p>
             </div>
             <div className="flex gap-2 items-baseline">
               <p className="font-bold text-5xl duration-300  group-hover:text-white text-[#170F49]">
-                $99
+                $499
               </p>
               <p className="text-[#6F6C90] duration-300 group-hover:text-white/70 font-medium text-lg ">
                 /monthly
@@ -263,7 +255,7 @@ const PaymentPlans = () => {
             </div>
             <div className="flex gap-3 flex-col">
               <div className="flex gap-3">
-                <div className="h-[21px] w-[21px] flex justify-center items-center rounded-full bg-[#4A3AFF]  duration-300  group-hover:bg-white">
+                <div className="h-[21px] w-[21px] flex justify-center items-center rounded-full duration-300  group-hover:bg-white bg-[#4A3AFF]">
                   <Image
                     className="filter group-hover:invert duration-300"
                     width={12}
@@ -272,11 +264,11 @@ const PaymentPlans = () => {
                   />
                 </div>
                 <p className="text-[#170F49] duration-300 group-hover:text-white/70 ">
-                  All analytics features
+                  Fully responsive website
                 </p>
               </div>
               <div className="flex gap-3">
-                <div className="h-[21px] w-[21px] flex justify-center items-center rounded-full bg-[#4A3AFF]  duration-300  group-hover:bg-white">
+                <div className="h-[21px] w-[21px] flex justify-center items-center rounded-full bg-[#4A3AFF] duration-300  group-hover:bg-white ">
                   <Image
                     className="filter group-hover:invert duration-300"
                     width={12}
@@ -284,12 +276,12 @@ const PaymentPlans = () => {
                     alt="check icon"
                   />
                 </div>
-                <p className="text-[#170F49] duration-300 group-hover:text-white/70 ">
-                  Up to 5,000,000 tracked visits
+                <p className="text-[#170F49]  duration-300 group-hover:text-white/70 ">
+                  Premium SEO Optimization
                 </p>
               </div>
               <div className="flex gap-3">
-                <div className="h-[21px] w-[21px] flex justify-center items-center rounded-full bg-[#4A3AFF]  duration-300  group-hover:bg-white">
+                <div className="h-[21px] w-[21px] flex justify-center items-center rounded-full bg-[#4A3AFF] duration-300  group-hover:bg-white">
                   <Image
                     className="filter group-hover:invert duration-300"
                     width={12}
@@ -298,11 +290,11 @@ const PaymentPlans = () => {
                   />
                 </div>
                 <p className="text-[#170F49] duration-300 group-hover:text-white/70 ">
-                  Dedicated support
+                  Customized design templates
                 </p>
               </div>
               <div className="flex gap-3">
-                <div className="h-[21px] w-[21px] flex justify-center items-center rounded-full bg-[#4A3AFF]  duration-300  group-hover:bg-white">
+                <div className="h-[21px] w-[21px] flex justify-center items-center rounded-full bg-[#4A3AFF] duration-300  group-hover:bg-white">
                   <Image
                     className="filter group-hover:invert duration-300"
                     width={12}
@@ -311,17 +303,46 @@ const PaymentPlans = () => {
                   />
                 </div>
                 <p className="text-[#170F49] duration-300 group-hover:text-white/70 ">
-                  Up to 50 team members
+                  Website analytics
+                </p>
+              </div>
+              <div className="flex gap-3">
+                <div className="h-[21px] w-[21px] flex justify-center items-center rounded-full bg-[#4A3AFF] duration-300  group-hover:bg-white">
+                  <Image
+                    className="filter group-hover:invert duration-300"
+                    width={12}
+                    src={check}
+                    alt="check icon"
+                  />
+                </div>
+                <p className="text-[#170F49] duration-300 group-hover:text-white/70 ">
+                  3 months of post-launch support
+                </p>
+              </div>
+              <div className="flex gap-3">
+                <div className="h-[21px] w-[21px] flex justify-center items-center rounded-full bg-[#4A3AFF] duration-300  group-hover:bg-white">
+                  <Image
+                    className="filter group-hover:invert duration-300"
+                    width={12}
+                    src={check}
+                    alt="check icon"
+                  />
+                </div>
+                <p className="text-[#170F49] duration-300 group-hover:text-white/70 w-full ">
+                  Any AI integration feature you choose from what we offer
                 </p>
               </div>
             </div>
           </CardContent>
-          <CardFooter className="flex justify-center items-center">
-            <Button className="bg-[#4A3AFF] duration-300 group-hover:bg-white group-hover:text-[#4A3AFF] font-semibold py-6 px-12 text-lg rounded-full active:scale-90 transition-all ">
-              Get started
-            </Button>
-          </CardFooter>
         </Card>
+      </div>
+      <div className="flex justify-center items-center mt-20">
+        <MeetingButton
+          id="portfolioButton"
+          className="bg-secondaryColor mt-5 text-xl md:text-2xl py-7 px-9 rounded-xl hover:bg-white hover:text-secondaryColor w-fit mx-auto "
+        >
+          Get Started
+        </MeetingButton>
       </div>
     </section>
   );
