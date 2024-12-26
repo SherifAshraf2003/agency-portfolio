@@ -5,16 +5,24 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import MeetingButton from "./MeetingButton";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [delay, setDelay] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth < 768 ? 1 : 3;
+    }
+    return 3;
+  });
+
   useGSAP(() => {
     const tl = gsap.timeline();
     tl.to("#heroButton", {
       opacity: 1,
       duration: 1,
-      delay: 3,
+      delay: delay,
     });
-  });
+  }, [delay]); // Add delay as dependency
 
   const words = `Drive growth and success with our innovative, data-driven solutions.`;
 
