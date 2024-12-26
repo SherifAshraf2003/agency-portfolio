@@ -5,10 +5,10 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import MeetingButton from "./MeetingButton";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Hero = () => {
-  const [delay, setDelay] = useState(() => {
+  const [delay] = useState(() => {
     if (typeof window !== "undefined") {
       return window.innerWidth < 768 ? 1 : 3;
     }
