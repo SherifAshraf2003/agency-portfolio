@@ -39,7 +39,7 @@ const Header = () => {
           </Link>
         </nav>
         <MeetingButton
-          className="bg-secondaryColor text-md px-5 hover:bg-white hover:text-secondaryColor"
+          className="bg-secondaryColor hidden md:flex justify-center items-center text-md px-5 hover:bg-white hover:text-secondaryColor"
           id="b"
         >
           Get Started

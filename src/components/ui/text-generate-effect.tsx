@@ -32,12 +32,12 @@ export const TextGenerateEffect = ({
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope}>
+      <motion.div className="hidden md:block" ref={scope}>
         {wordsArray.map((word, idx) => {
           return (
             <motion.span
               key={word + idx}
-              className="dark:text-white text-white/70 opacity-0"
+              className="dark:text-white  text-white/70 opacity-0"
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}
