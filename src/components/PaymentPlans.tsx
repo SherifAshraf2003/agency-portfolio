@@ -48,9 +48,9 @@ const PaymentPlans = () => {
                 $99
               </p>
 
-              <p className="text-[#6F6C90] duration-300 group-hover:text-white/70 font-medium text-lg">
+              {/* <p className="text-[#6F6C90] duration-300 group-hover:text-white/70 font-medium text-lg">
                 /monthly
-              </p>
+              </p> */}
             </div>
             <div>
               <h1 className="text-[#170F49] duration-300  group-hover:text-white font-bold">
@@ -135,9 +135,9 @@ const PaymentPlans = () => {
               <p className="font-bold text-5xl text-[#170F49] duration-300 group-hover:text-white ">
                 $199
               </p>
-              <p className="text-[#6F6C90] font-medium text-lg duration-300 group-hover:text-white/70 ">
+              {/* <p className="text-[#6F6C90] duration-300 group-hover:text-white/70 font-medium text-lg">
                 /monthly
-              </p>
+              </p> */}
             </div>
             <div>
               <h1 className="text-[#170F49] duration-300 group-hover:text-white/70 font-bold">
@@ -244,9 +244,9 @@ const PaymentPlans = () => {
               <p className="font-bold text-5xl duration-300  group-hover:text-white text-[#170F49]">
                 $499
               </p>
-              <p className="text-[#6F6C90] duration-300 group-hover:text-white/70 font-medium text-lg ">
+              {/* <p className="text-[#6F6C90] duration-300 group-hover:text-white/70 font-medium text-lg">
                 /monthly
-              </p>
+              </p> */}
             </div>
             <div>
               <h1 className="text-[#170F49] duration-300  group-hover:text-white font-bold">
