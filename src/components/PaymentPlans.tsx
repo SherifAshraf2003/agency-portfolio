@@ -44,7 +44,7 @@ const PaymentPlans = () => {
               </p>
             </div>
             <div className="flex  items-baseline">
-              <p className="font-bold text-5xl text-[#170F49] duration-300  group-hover:text-white mb-2 ">
+              <p className="font-bold text-5xl text-[#170F49] duration-300  group-hover:text-white  ">
                 $99
               </p>
 
