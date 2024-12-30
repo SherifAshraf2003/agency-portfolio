@@ -17,8 +17,7 @@ const data = [
   {
     src: img3,
     mainText: "Gift Ideas Generator App",
-    subText:
-      "A Web App to generate gift ideas using Ai then scraping amazon to provide a list of gifts.",
+    subText: "A Web App to generate gift ideas using Ai.",
   },
   {
     src: img4,
