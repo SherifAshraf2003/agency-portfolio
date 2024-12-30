@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { Card, CardContent, CardHeader } from "./ui/card";
-import paymentPlan1Img from "../../public/paymentPlan1.png";
-import paymentPlan2Img from "../../public/paymentPlan2.png";
-import paymentPlan3Img from "../../public/paymentPlan3.png";
-import check from "../../public/Check.png";
-import MeetingButton from "./MeetingButton";
+import { Card, CardContent, CardHeader } from "../ui/card";
+import paymentPlan1Img from "../../../public/paymentPlan1.png";
+import paymentPlan2Img from "../../../public/paymentPlan2.png";
+import paymentPlan3Img from "../../../public/paymentPlan3.png";
+import check from "../../../public/Check.png";
+import MeetingButton from "../MeetingButton";
 
 const PaymentPlans = () => {
   return (

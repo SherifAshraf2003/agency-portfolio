@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Rokkitt } from "next/font/google";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import MeetingButton from "./MeetingButton";
+import MeetingButton from "../MeetingButton";
 
 const rokkitt = Rokkitt({
   subsets: ["latin"],

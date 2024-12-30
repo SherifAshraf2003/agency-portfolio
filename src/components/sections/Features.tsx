@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
-import icon1 from "../../public/Icon1.png";
-import icon2 from "../../public/Icon2.png";
-import icon3 from "../../public/Icon3.png";
+import icon1 from "../../../public/Icon1.png";
+import icon2 from "../../../public/Icon2.png";
+import icon3 from "../../../public/Icon3.png";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import MeetingButton from "./MeetingButton";
+import MeetingButton from "../MeetingButton";
 
 const Features = () => {
   gsap.registerPlugin(ScrollTrigger);

@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import heroImage from "../../public/Desktop.svg";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
+import heroImage from "../../../public/Desktop.svg";
+import { TextGenerateEffect } from "../ui/text-generate-effect";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import MeetingButton from "./MeetingButton";
+import MeetingButton from "../MeetingButton";
 import { useState } from "react";
 
 const Hero = () => {

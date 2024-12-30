@@ -1,7 +1,7 @@
-import Features from "@/components/Features";
-import Hero from "@/components/Hero";
-import PaymentPlans from "@/components/PaymentPlans";
-import Portfolio from "@/components/Portfolio";
+import Features from "@/components/sections/Features";
+import Hero from "@/components/sections/Hero";
+import PaymentPlans from "@/components/sections/PaymentPlans";
+import Portfolio from "@/components/sections/Portfolio";
 
 export default function Home() {
   return (
