@@ -329,7 +329,7 @@ const PaymentPlans = () => {
                   />
                 </div>
                 <p className="text-[#170F49] duration-300 group-hover:text-white/70 w-full ">
-                  Any AI integration feature you choose from what we offer
+                  Customized AI powered chatbot
                 </p>
               </div>
             </div>
